@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@plugin "daisyui" ;
+
+:root {
+  --color-primary: #a6412f;
+  --color-secondary: #212b21;
+}
+
+.gradient-text {
+  background: linear-gradient(125deg, #a6412f 5.68%, #212b21 88.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+.gradient-animate-btn {
+  position: relative;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(125deg, #a6412f 5.68%, #212b21 88.38%);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  background-image:
+    linear-gradient(125deg, #a6412f 5.68%, #212b21 88.38%),
+    /* button fill */
+    linear-gradient(125deg, #a6412f 5.68%, #212b21 88.38%);
+  /* border gradient */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Hover: gradient border + animated gradient text */
+.gradient-animate-btn:hover {
+  background: white;
+  background-image: linear-gradient(125deg, #a6412f, #212b21, #d84d35);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text, border-box;
+  -webkit-background-clip: text, border-box;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid transparent;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
