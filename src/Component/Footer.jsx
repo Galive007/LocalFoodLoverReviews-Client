@@ -41,9 +41,9 @@ const Footer = () => {
                         <div className="font-semibold mb-2 text-secondary">Follow Us</div>
                         <div className="flex justify-center md:justify-start gap-3 text-xl">
                             
-                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-secondary'><Facebook /></a></div>
-                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-secondary'><Instagram /></a></div>
-                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-secondary'><Linkedin /></a></div>
+                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-primary'><Facebook /></a></div>
+                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-primary'><Instagram /></a></div>
+                            <div className='border-2 border-primary rounded-full p-2'><a href="#" aria-label="facebook" className='text-primary'><Linkedin /></a></div>
                             {/* <a href="#" aria-label="instagram">🟣</a>
                             <a href="#" aria-label="twitter">🔷</a> */}
                         </div>
