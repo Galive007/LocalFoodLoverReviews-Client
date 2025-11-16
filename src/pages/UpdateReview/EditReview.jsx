@@ -30,7 +30,7 @@ const EditReview = () => {
         }
         e.target.reset();
         // console.log(formData);
-        fetch(`http://localhost:4500/allreviews/${_id}`, {
+        fetch(`https://local-food-lover-reviews-server.vercel.app/allreviews/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -25,7 +25,7 @@ const AddReview = () => {
         }
         e.target.reset();
         // console.log(formData);
-        fetch('http://localhost:4500/allreviews',{
+        fetch('https://local-food-lover-reviews-server.vercel.app/allreviews',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -39,8 +39,8 @@ const AddReview = () => {
             navigate('/allreviews')
         })
         .catch(error=>{
-            console.log(error);
-            
+            // console.log(error);
+            toast.error('Something Wrong',error)
         })
     }
 

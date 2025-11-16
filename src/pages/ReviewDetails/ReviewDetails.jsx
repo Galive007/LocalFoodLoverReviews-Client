@@ -39,7 +39,7 @@ const ReviewDetails = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:4500/allreviews/${id}`, {
+                fetch(`https://local-food-lover-reviews-server.vercel.app/allreviews/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'
@@ -63,10 +63,10 @@ const ReviewDetails = () => {
             }
         });
     }
-
+// http://localhost:4500/favorites
     const handleFavorite = () => {
         // console.log('clicked');
-        fetch(`http://localhost:4500/favorites`, {
+        fetch(`https://local-food-lover-reviews-server.vercel.app/favorites`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -5,17 +5,18 @@ import MyContainer from './MyContainer';
 import logo from '../assets/Logos/Local_Food_Lovers_Network_2-removebg-preview.png'
 import { AuthContext } from '../context/AuthContext';
 import { House } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    const {user,signOutUser}=use(AuthContext)
+    const { user, signOutUser } = use(AuthContext)
 
     const links = <div className='text-secondary flex flex-col lg:flex-row lg:items-center lg:justify-center *:mr-3'>
         <MyLink to='/' className='text-lg'>Home</MyLink>
         <MyLink to='allreviews' className='text-lg'>All Reviews</MyLink>
 
     </div>
-    const logout=()=>{
+    const logout = () => {
         signOutUser()
     }
 
@@ -39,7 +40,23 @@ const Navbar = () => {
                             <img src={logo} alt="" className='w-2/5 md:w-1/6
                             h-3/5 rounded-full' />
                             <div className='hidden md:block'>
-                                <div className="text-sm md:text-xl lg:text-3xl gradient-text font-semibold">Local Food Lovers</div>
+                                <div className="text-sm md:text-xl lg:text-3xl gradient-text font-semibold">
+                                    <TypeAnimation
+                                        sequence={[
+                                            // Same substring at the start will only be typed once, initially
+                                            'Local',
+                                            100,
+                                            'Local Food',
+                                            300,
+                                            'Local Food Lover',
+                                            400,
+                                            'Local Food Lover NetWorks',
+                                            500,
+                                        ]}
+                                        speed={50}
+                                        repeat={Infinity}
+                                    />
+                                </div>
                                 <div className="text-xs text-primary gradient-text
                                 ">Discover & Share Local Food Reviews</div>
                             </div>
@@ -64,9 +81,9 @@ const Navbar = () => {
                             <div className="relative">
                                 <div className='flex items-center gap-2'>
                                     <h1 className='font-semibold text-secondary text-xl'>{user?.displayName}</h1>
-                                <button onClick={() => setOpen(o => !o)} className="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary">
-                                    <img src={user.photoURL || 'https://source.unsplash.com/120x120/?face'} alt="user" className="w-full h-full object-cover" />
-                                </button>
+                                    <button onClick={() => setOpen(o => !o)} className="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary">
+                                        <img src={user.photoURL || 'https://source.unsplash.com/120x120/?face'} alt="user" className="w-full h-full object-cover" />
+                                    </button>
                                 </div>
                                 {open && (
                                     <div className="absolute right-0 mt-2 w-48 bg-white rounded-md p-2 z-10 text-secondary flex flex-col shadow-2xl">
