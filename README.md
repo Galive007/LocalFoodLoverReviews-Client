@@ -186,8 +186,8 @@ DELETE /reviews/:id
 **md. al amin**
 Frontend & MERN Stack Developer
 
-* GitHub: [https://github.com/your-username](https://github.com/galive007)
-* LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/galive007)
+* GitHub: [https://github.com/galive007](https://github.com/galive007)
+* LinkedIn: [https://linkedin.com/in/galive007](https://linkedin.com/in/galive007)
 
 ---
 
