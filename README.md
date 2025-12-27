@@ -1,5 +1,9 @@
 # 🍽️ Local Food Reviews
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/galive007/galive007/main/assets/food-banner.gif" alt="Food Banner" />
+</p>
+
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Vite](https://img.shields.io/badge/Vite-5-purple)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-teal)
@@ -12,16 +16,16 @@
 
 ## 📌 Project Overview
 
-**Local Food Reviews** is a full-stack MERN web application that allows users to discover, review, and rate local food items and restaurants. The platform promotes local food culture by enabling users to share real experiences through ratings and reviews in a clean, responsive interface.
+**Local Food Reviews** is a full-stack MERN web application designed to help users discover, review, and rate local food items and restaurants. It focuses on community-driven feedback, clean UI, and secure user interactions.
 
-This project is built as a **portfolio-ready application** demonstrating real-world features such as authentication, CRUD operations, protected routes, and modern UI design.
+This project demonstrates real-world development skills including authentication, protected routes, REST APIs, database design, and responsive UI — making it ideal for professional portfolios and job applications.
 
 ---
 
 ## 🌐 Live Demo
 
-* **Frontend:** [https://local-food-reviews.netlify.app](https://local-food-reviews.netlify.app)
-* **Backend API:** [https://local-food-reviews-server.vercel.app](https://local-food-reviews-server.vercel.app)
+* **Frontend:** [https://local-food-review.netlify.app](https://local-food-review.netlify.app)
+* **Backend API:** [https://local-food-review-server.vercel.app](https://local-food-review-server.vercel.app)
 
 ---
 
@@ -167,23 +171,34 @@ DELETE /reviews/:id
 
 ## 📸 Screenshots
 
-> Add screenshots here for better portfolio presentation
+> 📌 **Homepage Screenshot**
+>
+> Save the homepage image as:
+>
+> ```
+> screenshots/home.png
+> ```
+>
+> then commit & push to GitHub to display it below.
+
+![Local Food Lover Networks – Home](screenshots/home.png)
 
 ---
 
 ## 🚀 Future Enhancements
 
-* Advanced food search & filters
-* User profile dashboard
-* Like & comment system
+* Advanced search & category-based filtering
+* User profile dashboard with activity history
+* Like, comment & reply system
 * Admin moderation panel
-* Image upload for food items
+* Image upload with cloud storage
+* Performance optimization & SEO improvements
 
 ---
 
 ## 👨‍💻 Author
 
-**md. al amin**
+**md. al amin (Galive)**
 Frontend & MERN Stack Developer
 
 * GitHub: [https://github.com/galive007](https://github.com/galive007)
